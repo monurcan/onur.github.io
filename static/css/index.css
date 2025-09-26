@@ -419,8 +419,17 @@ img, video {
         margin: 0.25rem;
         font-size: 0.875rem !important;
         padding: 0.75rem 1rem !important;
-        min-width: 0;
+        min-width: 85px;
         width: auto;
+        flex: 0 0 auto;
+        max-width: none;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    /* Force equal button content width */
+    .hero .buttons .button span:not(.icon) {
+        white-space: nowrap;
     }
     
     .email-display {
