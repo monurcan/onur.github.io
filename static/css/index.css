@@ -413,16 +413,19 @@ img, video {
     .hero .buttons {
         justify-content: center;
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.25rem;
     }
     
     /* Ensure all buttons have uniform sizing on mobile */
     .hero .buttons .button {
-        margin: 0.25rem;
+        margin: 0;
         font-size: 0.875rem !important;
-        padding: 0.75rem 0.75rem !important;
+        padding: 0.75rem 0.5rem !important;
         min-width: 0;
         width: auto;
-        flex: 1;
+        flex: 1 1 0;
         max-width: none;
         box-sizing: border-box;
         text-align: center;
