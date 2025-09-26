@@ -413,18 +413,17 @@ img, video {
     .hero .buttons {
         justify-content: center;
         display: flex;
-        flex-wrap: wrap;
     }
     
     /* Ensure all buttons have uniform sizing on mobile */
     .hero .buttons .button {
         margin: 0.25rem;
         font-size: 0.875rem !important;
-        padding: 0.75rem 1rem !important;
+        padding: 0.75rem 0.75rem !important;
         min-width: 0;
-        width: calc(20% - 0.5rem);
-        flex: 0 0 calc(20% - 0.5rem);
-        max-width: calc(20% - 0.5rem);
+        width: auto;
+        flex: 1;
+        max-width: none;
         box-sizing: border-box;
         text-align: center;
     }
