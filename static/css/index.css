@@ -419,17 +419,21 @@ img, video {
         margin: 0.25rem;
         font-size: 0.875rem !important;
         padding: 0.75rem 1rem !important;
-        min-width: 85px;
-        width: auto;
-        flex: 0 0 auto;
-        max-width: none;
+        width: 90px !important;
+        flex: 0 0 90px !important;
+        max-width: 90px !important;
         box-sizing: border-box;
         text-align: center;
+        overflow: hidden;
     }
     
     /* Force equal button content width */
     .hero .buttons .button span:not(.icon) {
         white-space: nowrap;
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .email-display {
