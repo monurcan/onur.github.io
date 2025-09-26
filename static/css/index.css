@@ -412,6 +412,8 @@ img, video {
     
     .hero .buttons {
         justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     /* Ensure all buttons have uniform sizing on mobile */
@@ -420,9 +422,9 @@ img, video {
         font-size: 0.875rem !important;
         padding: 0.75rem 1rem !important;
         min-width: 0;
-        width: auto;
-        flex: 1 1 auto;
-        max-width: none;
+        width: calc(20% - 0.5rem);
+        flex: 0 0 calc(20% - 0.5rem);
+        max-width: calc(20% - 0.5rem);
         box-sizing: border-box;
         text-align: center;
     }
