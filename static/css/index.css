@@ -416,22 +416,21 @@ img, video {
     
     /* Ensure all buttons have uniform sizing on mobile */
     .hero .buttons .button {
-        margin: 0.25rem;
+        width: 100% !important;
+        justify-content: center;
+        margin: 0.25rem 0 !important;
         font-size: 0.875rem !important;
-        padding: 0.75rem 0.5rem !important;
-        flex: 1 1 0 !important;
-        min-width: 0 !important;
-        max-width: none !important;
+        padding: 0.75rem 1rem !important;
         box-sizing: border-box;
         text-align: center;
     }
     
-    /* Ensure buttons container is flexible */
+    /* Ensure buttons container stacks vertically */
     .hero .buttons {
         display: flex !important;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        gap: 0.5rem;
+        align-items: stretch;
     }
     
     /* Force equal button content width */
