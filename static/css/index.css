@@ -302,6 +302,7 @@ img, video {
 
 .publication-authors a {
    /* color: hsl(204, 86%, 53%) !important; */
+    color: var(--text-secondary);
 }
 
 .publication-authors a:hover {
